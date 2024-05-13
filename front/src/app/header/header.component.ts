@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { LinkComponent } from '../link/link.component';
 
 @Component({
-  selector: 'app-nav-bar',
+  selector: 'app-header',
   standalone: true,
   imports: [LinkComponent],
-  templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css'
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css'
 })
-export class NavBarComponent {
+export class HeaderComponent {
 
 }
