@@ -1,0 +1,40 @@
+.nav-bar {
+    margin: 0 0.5em 0 0.5em;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 640px) {
+    .nav-bar {
+        margin: 0 4em 0 4em;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.border {
+    border-bottom: solid 2px #43454D;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+
+.account-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
