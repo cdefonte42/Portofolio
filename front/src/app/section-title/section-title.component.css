@@ -1,0 +1,34 @@
+:host {
+    font-family: var(--h1-u-family);
+    font-size: var(--h1-u-size);
+    font-weight: var(--h1-u-weight);
+    line-height: var(--h1-u-height);
+    color: var(--brand-1);
+}
+
+.line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--brand-1);
+}
+
+.line::before,
+.line::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--brand-1);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.line::before {
+    left: -3px;
+}
+
+.line::after {
+    right: -3px;
+}
