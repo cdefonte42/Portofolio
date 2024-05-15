@@ -17,12 +17,12 @@ app-nav-bar {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
     gap: 1.25rem;
 }
 
 .content > * {
     height: 90vh;
-    margin: 0 10vw;
+    margin: auto;
 }
