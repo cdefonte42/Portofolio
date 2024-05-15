@@ -1,13 +1,74 @@
-body {
-    background-color: #292F36;
+:root {
+    --brand-1: #12F7D6;
+    --brand-2: #98FAEC;
+    --bg-1: #292F36;
+    --bg-2: #1A1E23;
+    --gray-dark: #666;
+    --gray: #43454D;
+    --gray-light: #bdbdbd;
+    --beige: #f5f5f1;
+    --gap--lg: 100px;
+    --gap: 80px;
+    --text-color: white;
+    --light-icon: white;
+    --dark-icon: var(--bg-2);
+    --anchor-color: var(--brand-1);
+}
+
+html {
+    background-color: var(--bg-1);
+    color: var(--text-color);
     font-family: IBM Plex Mono;
-    color: white;
+
 }
 
-.brand-1 {
-    color: #12F7D6;
+html.light-theme {
+    background-color: var(--beige);
+    --text-color: var(--bg-2);
+    --gray-light: var(--gray-dark);
+    --light-icon: var(--bg-2);
+    --dark-icon: white;
+    --anchor-color: var(--bg-2);
 }
 
-.bg-1 {
-    color: #292F36;
+*::selection {
+    background-color: var(--brand-1);
+    color: var(--gray);
+}
+
+.code-m {
+    font-family: IBM Plex Mono;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.media-m,
+.para-m {
+    font-family: IBM Plex Mono;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.menu-m {
+    font-family: IBM Plex Mono;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.logo-m,
+.h2-m {
+    font-family: IBM Plex Mono;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.number-m {
+    font-family: IBM Plex Mono;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62px;
 }
