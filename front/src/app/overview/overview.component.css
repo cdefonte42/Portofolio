@@ -4,7 +4,6 @@
     box-sizing: border-box;
     padding: 1.5rem 1.75rem;
     width: 320px;
-    height: 520px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
