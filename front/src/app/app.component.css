@@ -1,0 +1,28 @@
+app-nav-bar {
+    position: fixed;
+    top: 120px;
+    left: 20px;
+
+}
+
+@media screen and (max-width: 760px) {
+    app-nav-bar {
+        display: none;
+
+    }
+
+}
+
+.content {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.content > * {
+    height: 90vh;
+    margin: 0 10vw;
+}
