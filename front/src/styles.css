@@ -14,6 +14,41 @@
     --dark-icon: var(--bg-2);
     --anchor-color: var(--brand-1);
 
+    --h1-u-family: Ubuntu;
+    --h1-u-weight: normal;
+    /* 60px */
+    --h1-u-size: 3.75rem;
+    /* 72px */
+    --h1-u-height: 4.5rem;
+
+    --h2-u-family: Ubuntu;
+    --h2-u-weight: normal;
+    /* 32px */
+    --h2-u-size: 2rem;
+    /* 36px */
+    --h2-u-height: 2.25rem;
+
+    --button-u-family: Ubuntu;
+    --button-u-weight: normal;
+    /* 20px */
+    --button-u-size: 1.25rem;
+    /* 24px */
+    --button-u-height: 1.5rem;
+
+    --article-u-family: Ubuntu;
+    --article-u-weight: 300;
+    /* 16px */
+    --article-u-size: 1rem;
+    /* 32px */
+    --article-u-height: 2rem;
+
+    --para-u-family: Ubuntu;
+    --para-u-weight: 300;
+    /* 16px */
+    --para-u-size: 1rem;
+    /* 18px */
+    --para-u-height: 1.125rem;
+
     --logo-m-family: IBM Plex Mono;
     --logo-m-weight: 500;
     /* 36px */
