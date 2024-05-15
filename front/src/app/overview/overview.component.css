@@ -1,0 +1,71 @@
+.card {
+    border: solid var(--brand-1) 2px;
+    border-radius: 25% 0;
+    padding: 0 10px;
+    width: 320px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 1.5rem 0.5rem;
+    white-space: nowrap;
+}
+
+.photo-name {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    height: 96px;
+    border: solid 2px var(--brand-1);
+    border-radius: 50%;
+}
+
+.external-border {
+    width: fit-content;
+    border-radius: 25% 0;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.infos>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.infos svg {
+    color: var(--brand-1);
+    height: 1rem;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tools>div {
+    padding: 0 1rem;
+    background-color: var(--brand-1);
+    color: var(--bg-1);
+    border-radius: 9999px;
+}
+
+app-button {
+    align-self: center;
+}
