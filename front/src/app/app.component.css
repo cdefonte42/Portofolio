@@ -14,15 +14,23 @@ app-nav-bar {
 }
 
 .content {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
-    gap: 1.25rem;
+    display: grid;
+    gap: 2rem;
+    margin: 1.25rem 4rem;
 }
 
-.content > * {
-    height: 90vh;
-    margin: auto;
+.content > div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content div > *:nth-child(2) {
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+
+app-section-title {
+    align-self: center;
 }

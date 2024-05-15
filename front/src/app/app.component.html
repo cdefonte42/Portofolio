@@ -1,9 +1,19 @@
 <app-header />
 <app-nav-bar />
 
-
 <div class="content">
-    <app-overview id="overview-view" />
+    <div id="overview-view">
+        <app-section-title>About Me</app-section-title>
+        <app-overview />
+    </div>
+    <div id="work-experiences-view">
+        <app-section-title>Projects</app-section-title>
+        <app-work-experiences />
+    </div>
+    <div id="contact-view">
+        <app-section-title>Contact</app-section-title>
+        <app-work-experiences />
+    </div>
 </div>
 
 <router-outlet />

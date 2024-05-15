@@ -1,9 +1,18 @@
 :host {
-    font-family: var(--h1-u-family);
-    font-size: var(--h1-u-size);
-    font-weight: var(--h1-u-weight);
-    line-height: var(--h1-u-height);
     color: var(--brand-1);
+    font-family: var(--h2-u-family);
+    font-size: var(--h2-u-size);
+    font-weight: var(--h2-u-weight);
+    line-height: var(--h2-u-height);
+}
+
+@media screen and (min-width: 760px) {
+    :host {
+        font-family: var(--h1-u-family);
+        font-size: var(--h1-u-size);
+        font-weight: var(--h1-u-weight);
+        line-height: var(--h1-u-height);
+    }
 }
 
 .line {
