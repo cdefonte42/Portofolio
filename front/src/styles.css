@@ -13,6 +13,25 @@
     --light-icon: white;
     --dark-icon: var(--bg-2);
     --anchor-color: var(--brand-1);
+
+    --logo-m-family: IBM Plex Mono;
+    --logo-m-weight: 500;
+    /* 36px */
+    --logo-m-size: 2.25rem;
+    /* 40px */
+    --logo-m-height: 2.5rem;
+    --menu-m-family: IBM Plex Mono;
+    --menu-m-weight: normal;
+    /* 24px */
+    --menu-m-size: 1.5rem;
+    /* 32px */
+    --menu-m-height: 2rem;
+    --media-m-family: IBM Plex Mono;
+    --media-m-weight: normal;
+    /* 16px */
+    --media-m-size: 1rem;
+    /* 24px */
+    --media-m-height: 1.5rem;
 }
 
 html {
