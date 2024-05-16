@@ -2,22 +2,10 @@
     position: relative;
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-between;
     gap: 2rem;
-}
-
-.img {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    padding: 4px;
-    background-color: var(--brand-1);
-    border-radius: 50%;
-}
-
-
-.timeline .content {
-    height: 30px;
-    margin-left: 30px;
+    box-sizing: border-box;
+    padding: 1.5rem 0;
 }
 
 .timeline::before {
@@ -25,18 +13,8 @@
     position: absolute;
     top: 0;
     height: 100%;
-    width: 2px;
-    background-color: var(--brand-1);
-}
-
-.timeline__dot {
-    background-color: currentColor;
-    border-radius: 50%;
-    display: inline-block;
-    flex-shrink: 0;
-    margin: 0.625em 0;
-    margin-inline-end: 1em;
-    position: relative;
-    width: 0.75em;
-    height: 0.75em;
+    width: 0.25rem;
+    margin-left: 1rem;
+    left: calc(-0.25rem / 2);
+    background-color: var(--bg-2);
 }
