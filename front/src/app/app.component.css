@@ -26,7 +26,7 @@ app-nav-bar {
 
 
 .content > div {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -37,18 +37,42 @@ app-section-title {
     align-self: center;
 }
 
+
+.desktop {
+    display: none;
+}
+
+@media screen and (min-width: 760px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+
 .overview-content {
+    flex-grow: 1;
     overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     gap: 2rem;
     justify-content: center;
     align-items: center;
 }
 
+.mobile {
+    transform: translateX(25%);
+    overflow-x: hidden;
+    max-width: calc(100% - 25%);
+}
+
 .timeline {
+    margin-top: 10%;
+    align-self: start;
+    max-height: 60vh;
     flex-grow: 1;
-    height: 60%;
     overflow: auto;
 }
