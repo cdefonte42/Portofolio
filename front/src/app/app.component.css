@@ -16,13 +16,13 @@ app-nav-bar {
 .content {
     display: grid;
     gap: 2rem;
-    margin: 1.25rem 4rem;
 }
 
 .content > div {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
 }
 
