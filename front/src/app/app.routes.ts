@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { BlankComponent } from './blank/blank.component';
 import { PortofolioComponent } from './portofolio/portofolio.component';
+import { LayoutComponent } from './layout/layout.component';
 
 export const routes: Routes = [
-    { path: "blank", component: BlankComponent },
+    { path: "blank", component: LayoutComponent },
     { path: "**", component: PortofolioComponent }
 ];

@@ -1,0 +1,25 @@
+:host {
+    min-height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows:
+        [header] 4rem [main] auto [footer-start] 4rem [footer-end];
+    grid-template-columns: [outer-start] 1rem [main-start] auto [main-end] 1rem [outer-end];
+}
+
+:host > * {
+    display: grid;
+    grid: subgrid / subgrid;
+}
+
+.header {
+    grid-area: header / main;
+}
+
+.content {
+    grid-area: main / main;
+}
+
+.footer {
+    grid-area: footer / main;
+}
