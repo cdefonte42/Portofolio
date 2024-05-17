@@ -1,25 +1,87 @@
 :host {
     min-height: 100vh;
-    width: 100vw;
+    box-sizing: border-box;
+    grid-template-columns: 100%;
     display: grid;
     grid-template-rows:
         [header] 4rem [main] auto [footer-start] 4rem [footer-end];
-    grid-template-columns: [outer-start] 1rem [main-start] auto [main-end] 1rem [outer-end];
 }
 
 :host > * {
     display: grid;
-    grid: subgrid / subgrid;
 }
 
 .header {
-    grid-area: header / main;
+    grid-area: header / auto;
 }
 
-.content {
-    grid-area: main / main;
+.main {
+    grid-area: main / auto;
 }
 
 .footer {
-    grid-area: footer / main;
+    grid-area: footer / auto;
+}
+
+.main > .section {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.section {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-rows: [title] 2.5rem [content] auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 100%;
+}
+
+.title {
+    display: grid;
+    grid-area: title / auto;
+}
+
+.content {
+    display: grid;
+    grid-area: content / auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.wrapper {
+    overflow: auto;
+    display: flex;
+    width: 80%;
+    max-width: 1280px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: gray;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        display: block;
+        overflow: unset;
+    }
+
+    .scroller {
+        max-width: unset;
+        max-height: unset;
+        overflow: unset;
+    }
+}
+
+.scroller {
+    max-width: 500px;
+    max-height: 300px;
+    background-color: blue;
+    opacity: 50%;
+    overflow: auto;
+}
+
+.some-too-big-content {
+    height: 700px;
+    background-color: red;
+    opacity: 50%;
 }
