@@ -4,12 +4,12 @@
     height: 2rem;
     margin-left: 1rem;
     left: calc(-2rem / 2);
-    background-color: var(--bg-2);
+    background-color: var(--dark-navy);
     border-radius: 50%;
 }
 
 .img svg {
-    color: var(--brand-1);
+    color: var(--green);
     width: 100%;
     height: 100%;
     margin: auto;

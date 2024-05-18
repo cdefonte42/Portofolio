@@ -14,15 +14,15 @@ div:disabled {
 
 .white {
     background-color: white;
-    color: var(--bg-1);
+    color: var(--navy);
 }
 
 .brand {
-    background-color: var(--brand-1);
-    color: var(--bg-1);
+    background-color: var(--green);
+    color: var(--navy);
 }
 
 .dark {
-    background-color: var(--bg-1);
-    color: var(--brand-1);
+    background-color: var(--navy);
+    color: var(--green);
 }

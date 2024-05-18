@@ -16,5 +16,5 @@
     width: 0.25rem;
     margin-left: 1rem;
     left: calc(-0.25rem / 2);
-    background-color: var(--bg-2);
+    background-color: var(--dark-navy);
 }
