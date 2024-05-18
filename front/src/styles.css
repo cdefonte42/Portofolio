@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: calc(15px + 0.390625vw);
+}
+
 :root {
     --brand-1: #12F7D6;
     --brand-2: #98FAEC;
