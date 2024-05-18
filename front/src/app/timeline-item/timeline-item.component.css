@@ -4,7 +4,7 @@
     height: 2rem;
     margin-left: 1rem;
     left: calc(-2rem / 2);
-    background-color: var(--dark-navy);
+    background-color: var(--lightest-navy);
     border-radius: 50%;
 }
 
@@ -22,10 +22,7 @@
 }
 
 .date {
-    font-family: var(--para-u-family);
-    font-size: var(--para-u-size);
-    font-weight: var(--para-u-weight);
-    line-height: var(--para-u-height);
+
     display: flex;
     gap: 0.5rem;
 }
@@ -36,18 +33,12 @@
 
 .title {
     padding-left: 0.75rem;
-    font-family: var(--media-u-family);
-    font-size: var(--media-u-size);
-    font-weight: var(--media-u-weight);
-    line-height: var(--media-u-height);
 }
 
 .description {
     overflow: hidden;
-    font-family: var(--article-u-family);
-    font-size: var(--article-u-size);
-    font-weight: var(--article-u-weight);
-    line-height: var(--article-u-height);
+    line-height: 1.5rem;
+
 }
 
 .can-expand {

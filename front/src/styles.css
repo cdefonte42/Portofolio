@@ -1,10 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: calc(15px + 0.390625vw);
+    font-size: 15px;
 }
 
 :root {
+    /***** COLORS *****/
     --dark-navy: #020c1b;
     --navy: #0a192f;
     --light-navy: #112240;
@@ -19,111 +20,16 @@ body {
     --green-tint: rgba(100, 255, 218, 0.1);
     --pink: #f57dff;
     --blue: #57cbff;
-
-    --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
-        sans-serif;
-    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
-
-    --h1-u-family: Ubuntu;
-    --h1-u-weight: normal;
-    /* 60px */
-    --h1-u-size: 3.75rem;
-    /* 72px */
-    --h1-u-height: 4.5rem;
-
-    --h2-u-family: Ubuntu;
-    --h2-u-weight: normal;
-    /* 32px */
-    --h2-u-size: 2rem;
-    /* 36px */
-    --h2-u-height: 2.25rem;
-
-    --button-u-family: Ubuntu;
-    --button-u-weight: normal;
-    /* 20px */
-    --button-u-size: 1.25rem;
-    /* 24px */
-    --button-u-height: 1.5rem;
-
-    --article-u-family: Ubuntu;
-    --article-u-weight: 300;
-    /* 16px */
-    --article-u-size: 1rem;
-    /* 32px */
-    --article-u-height: 2rem;
-
-    --para-u-family: Ubuntu;
-    --para-u-weight: 300;
-    /* 16px */
-    --para-u-size: 1rem;
-    /* 18px */
-    --para-u-height: 1.125rem;
-
-    --logo-m-family: IBM Plex Mono;
-    --logo-m-weight: 500;
-    /* 36px */
-    --logo-m-size: 2.25rem;
-    /* 40px */
-    --logo-m-height: 2.5rem;
-    --menu-m-family: IBM Plex Mono;
-    --menu-m-weight: normal;
-    /* 24px */
-    --menu-m-size: 1.5rem;
-    /* 32px */
-    --menu-m-height: 2rem;
-    --media-m-family: IBM Plex Mono;
-    --media-m-weight: normal;
-    /* 16px */
-    --media-m-size: 1rem;
-    /* 24px */
-    --media-m-height: 1.5rem;
 }
 
 html {
     background-color: var(--navy);
     color: var(--slate);
-    font-family: IBM Plex Mono;
-
+    font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
+        sans-serif;
 }
 
 *::selection {
     background-color: var(--green);
     color: var(--gray);
-}
-
-.code-m {
-    font-family: IBM Plex Mono;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-.media-m,
-.para-m {
-    font-family: IBM Plex Mono;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.menu-m {
-    font-family: IBM Plex Mono;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 32px;
-}
-
-.logo-m,
-.h2-m {
-    font-family: IBM Plex Mono;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
-}
-
-.number-m {
-    font-family: IBM Plex Mono;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 62px;
 }

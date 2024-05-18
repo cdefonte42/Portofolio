@@ -22,19 +22,11 @@
     align-items: center;
     gap: 0.5em;
     white-space: nowrap;
-    font-family: var(--media-m-family);
-    font-size: var(--media-m-size);
-    font-weight: var(--media-m-weight);
-    line-height: var(--media-m-height);
+
 }
 
 @media screen and (min-width: 1280px) {
-    .name {
-        font-family: var(--logo-m-family);
-        font-size: var(--logo-m-size);
-        font-weight: var(--logo-m-weight);
-        line-height: var(--logo-m-height);
-    }
+    .name {}
 }
 
 
@@ -58,17 +50,9 @@
     flex-direction: row;
     align-items: center;
     gap: 1em;
-    font-family: var(--media-m-family);
-    font-size: var(--media-m-size);
-    font-weight: var(--media-m-weight);
-    line-height: var(--media-m-height);
+
 }
 
 @media screen and (min-width: 1280px) {
-    .account-links {
-        font-family: var(--menu-m-family);
-        font-size: var(--menu-m-size);
-        font-weight: var(--menu-m-weight);
-        line-height: var(--menu-m-height);
-    }
+    .account-links {}
 }
