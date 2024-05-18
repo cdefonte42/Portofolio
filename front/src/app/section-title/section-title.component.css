@@ -1,43 +1,19 @@
 :host {
-    color: var(--green);
-    font-family: var(--h2-u-family);
-    font-size: var(--h2-u-size);
-    font-weight: var(--h2-u-weight);
-    line-height: var(--h2-u-height);
-}
-
-@media screen and (min-width: 760px) {
-    :host {
-        font-family: var(--h1-u-family);
-        font-size: var(--h1-u-size);
-        font-weight: var(--h1-u-weight);
-        line-height: var(--h1-u-height);
-    }
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .line {
-    position: relative;
-    width: 100%;
-    height: 2px;
-    background-color: var(--green);
+    background-color: var(--lightest-navy);
+    height: 0.1rem;
+    flex-grow: 1;
 }
 
-.line::before,
-.line::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background-color: var(--green);
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
+.number {
+    color: var(--green);
 }
 
-.line::before {
-    left: -3px;
-}
-
-.line::after {
-    right: -3px;
+.number::after {
+    content: ".";
 }

@@ -7,7 +7,7 @@
     gap: 2rem;
 }
 
-.section > .title {
-    display: flex;
-    justify-content: center;
+app-section-title {
+    width: 80%;
+    margin: auto;
 }
