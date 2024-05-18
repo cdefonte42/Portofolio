@@ -43,6 +43,7 @@
 }
 
 .description {
+    overflow: hidden;
     font-family: var(--article-u-family);
     font-size: var(--article-u-size);
     font-weight: var(--article-u-weight);
