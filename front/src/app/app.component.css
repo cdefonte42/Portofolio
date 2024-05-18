@@ -1,5 +1,6 @@
 .section.overview > .content {
     margin: 2rem auto;
+    overflow-x: auto;
     width: 80%;
     max-width: 1000px;
     display: flex;
@@ -18,7 +19,7 @@ app-section-title {
     }
 
     app-overview {
-        margin: 2rem auto;
+        margin: 0 auto 2rem auto;
         display: block;
         width: fit-content;
     }

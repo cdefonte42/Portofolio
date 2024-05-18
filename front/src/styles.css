@@ -7,6 +7,7 @@ body {
 :root {
     /***** COLORS *****/
     --dark-navy: #020c1b;
+    --medium-navy: #0d1a2f;
     --navy: #0a192f;
     --light-navy: #112240;
     --lightest-navy: #233554;
@@ -31,5 +32,5 @@ html {
 
 *::selection {
     background-color: var(--green);
-    color: var(--gray);
+    color: var(--navy);
 }
