@@ -1,0 +1,54 @@
+.img {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    left: calc(-2rem / 2);
+    background-color: var(--bg-2);
+    border-radius: 50%;
+}
+
+.img svg {
+    color: var(--brand-1);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 30%;
+}
+
+.content {
+    margin-left: 3rem;
+}
+
+.date {
+    font-family: var(--para-u-family);
+    font-size: var(--para-u-size);
+    font-weight: var(--para-u-weight);
+    line-height: var(--para-u-height);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.date .to::before {
+    content: "-";
+}
+
+.title {
+    padding-left: 0.75rem;
+    font-family: var(--media-u-family);
+    font-size: var(--media-u-size);
+    font-weight: var(--media-u-weight);
+    line-height: var(--media-u-height);
+}
+
+.description {
+    font-family: var(--article-u-family);
+    font-size: var(--article-u-size);
+    font-weight: var(--article-u-weight);
+    line-height: var(--article-u-height);
+}
+
+.can-expand {
+    cursor: pointer;
+}

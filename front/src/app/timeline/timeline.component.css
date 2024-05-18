@@ -1,0 +1,20 @@
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 2rem;
+    box-sizing: border-box;
+    padding: 1.5rem 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 0.25rem;
+    margin-left: 1rem;
+    left: calc(-0.25rem / 2);
+    background-color: var(--bg-2);
+}
