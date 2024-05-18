@@ -1,3 +1,6 @@
-<div [class]=color (click)="onClick.emit()">
-    <ng-content />
+<div class="outter">
+    <div class="inner"></div>
+    <div class="button" [class]=color (click)="onClick.emit()">
+        <ng-content />
+    </div>
 </div>

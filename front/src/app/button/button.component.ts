@@ -1,3 +1,4 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
@@ -5,12 +6,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.css'
+  styleUrl: './button.component.css',
+
 })
 
 export class ButtonComponent {
   @Input() color: "brand" | "white" | "dark" = "brand";
   @Input() disabled: boolean = false;
   @Output() onClick = new EventEmitter<MouseEvent>();
-
 }
