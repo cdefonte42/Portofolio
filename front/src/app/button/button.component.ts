@@ -13,7 +13,11 @@ import { ProjectionContentDirective } from '../projection-content.directive';
 
 export class ButtonComponent {
   @Input() color: "brand" | "white" | "dark" = "brand";
+
   @Input() disabled: boolean = false;
+
   @Output() onClick = new EventEmitter<MouseEvent>();
+
   @ContentChild(ProjectionContentDirective) iconRef?: ProjectionContentDirective;
+  @Input() iconPosition?: "left" | "right" | "top" | "bottom" = "left";
 }
