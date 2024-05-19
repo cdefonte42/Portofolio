@@ -1,8 +1,28 @@
-.section.overview > .content {
-    margin: 2rem auto;
-    overflow-x: auto;
+app-header {
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-family: IBM Plex Mono;
+    z-index: 999;
+    width: 100%;
+    backdrop-filter: blur(10px) brightness(75%);
+    box-shadow: 0 10px 30px -10px var(--navy-shadow);
+
+}
+
+.section {
+    margin: 3rem auto;
+}
+
+.section > .content {
     width: 80%;
     max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.section.overview > .content {
+    overflow-x: auto;
     display: flex;
     align-items: center;
     gap: 2rem;
