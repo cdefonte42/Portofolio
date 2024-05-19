@@ -2,5 +2,8 @@
     <div class="inner"></div>
     <div class="button" [class]=color (click)="onClick.emit()">
         <ng-content />
+        <div *ngIf="iconRef">
+            <ng-container [ngTemplateOutlet]="iconRef.templateRef"></ng-container>
+        </div>
     </div>
 </div>
