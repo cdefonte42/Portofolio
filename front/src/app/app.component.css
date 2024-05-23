@@ -43,3 +43,36 @@ app-section-title {
         width: fit-content;
     }
 }
+
+.skills {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-card {
+    font-family: IBM Plex Mono;
+    color: var(--light-slate);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.skill-logo {
+    color: var(--green);
+    width: 70px;
+    height: 70px;
+    background-color: var(--navy-shadow);
+}
+
+.skill-logo > svg {
+    width: 100%;
+}
+
+.skill-logo:has(div) {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
