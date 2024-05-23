@@ -11,6 +11,12 @@ app-header {
 
 }
 
+app-card.skill-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .section {
     margin: 3rem auto;
 }
@@ -49,6 +55,7 @@ app-section-title {
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 2rem auto;
 }
 
 .skill-card {
@@ -69,10 +76,4 @@ app-section-title {
 
 .skill-logo > svg {
     width: 100%;
-}
-
-.skill-logo:has(div) {
-    display: flex;
-    justify-items: center;
-    align-items: center;
 }
