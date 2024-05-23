@@ -77,3 +77,11 @@ app-section-title {
 .skill-logo > svg {
     width: 100%;
 }
+
+.section.projects > .content > app-project {
+    margin-bottom: 100px;
+}
+
+.section.projects > .content {
+    margin-top: 50px;
+}

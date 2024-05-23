@@ -6,24 +6,31 @@
     gap: 1rem;
 }
 
+:host.left {
+    flex-direction: row-reverse;
+}
+
 
 .img-container {
     background-color: var(--green);
+    border-radius: 5px;
 }
 
 img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    mix-blend-mode: multiply;
-    filter: grayscale(100%) contrast(1) brightness(90%);
-    transition: filter .2s ease-in;
-
+    max-height: 500px;
+    filter: grayscale(100%);
+    opacity: 80%;
+    transition: filter .2s ease-in, opacity .2s ease-in;
+    display: block;
 }
 
 img:hover {
     mix-blend-mode: unset;
     filter: unset;
+    opacity: unset;
 }
 
 
@@ -48,11 +55,10 @@ img:hover {
     flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: end;
     border-top: solid 1px var(--green);
     color: var(--slate);
     line-height: 1.75rem;
-
+    margin-bottom: 1rem;
 }
 
 .info-panel .content {
@@ -60,6 +66,7 @@ img:hover {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    margin-top: 2rem;
 
 }
 

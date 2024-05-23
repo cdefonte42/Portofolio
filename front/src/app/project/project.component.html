@@ -1,30 +1,22 @@
-<div class="img-skills-origin">
-    <div class="img-container">
-        <img src="assets/demo.avif">
-    </div>
-    <div class="skills">
-        <div class="tag">angular</div>
-        <div class="tag">typescript</div>
-        <div class="tag">cypress</div>
-        <div class="tag">express</div>
-    </div>
-    <div class="origin">
-        Stage Moove 2023
-    </div>
-</div>
 <div class="info-panel">
     <div class="content">
         <div class="title text-2xl">
-            Application web Moove
+            {{project.title}}
         </div>
         <div class="description">
-            Application web de gestion et de réservation de vols d’affaires. Développement complet de nouvelles
-            features, débogage suivant les tests utilisateurs. Personnalisation selon les demandes client.
-            Synchronisation des données des opérateurs avec leurs Operating Softwares. Responsive design (utilisation de
-            Tailwind CSS, version mobile build avec Capacitor). Validation des schémas de données front avec Yup et
-            Formik. Validation backend avec Zod. Installation et implémentation de tests end-to-end avec Cypress.
-            Utilisation de l’ORM Prisma. Mailing automatiques et dynamiques via SendGrid, écriture de templates HTML en
-            Nunjucks.
+            {{project.description}}
+
         </div>
+    </div>
+</div>
+<div class="img-skills-origin">
+    <div class="img-container">
+        <img src="{{project.imagePath}}">
+    </div>
+    <div class="skills" *ngIf="project.skills?.length">
+        <div class="tag" *ngFor="let skill of project.skills">{{skill}}</div>
+    </div>
+    <div *ngIf="project.location" class="origin">
+        {{project.location}}, {{project.dateTo}}
     </div>
 </div>
