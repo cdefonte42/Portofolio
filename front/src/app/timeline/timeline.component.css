@@ -16,6 +16,6 @@
     width: 0.25rem;
     margin-left: 1rem;
     left: calc(-0.25rem / 2);
-    background-color: var(--navy-shadow);
+    background-color: var(--light-navy);
     opacity: 80%;
 }

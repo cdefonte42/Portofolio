@@ -4,7 +4,7 @@
     height: 2rem;
     margin-left: 1rem;
     left: calc(-2rem / 2);
-    background-color: var(--navy-shadow);
+    background-color: var(--light-navy);
     border-radius: 50%;
 }
 

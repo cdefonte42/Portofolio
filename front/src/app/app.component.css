@@ -7,7 +7,7 @@ app-header {
     z-index: 999;
     width: 100%;
     backdrop-filter: blur(10px) brightness(75%);
-    box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    box-shadow: 0 10px 30px -10px var(--light-navy);
 
 }
 
@@ -64,7 +64,7 @@ app-section-title {
     color: var(--green);
     width: 70px;
     height: 70px;
-    background-color: var(--navy-shadow);
+    background-color: var(--light-navy);
 }
 
 .skill-logo > svg {
