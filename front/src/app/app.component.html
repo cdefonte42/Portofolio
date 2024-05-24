@@ -1,8 +1,6 @@
 <app-header />
 <div class="section overview">
-    <div class="title">
-        <app-section-title [text]="'About me'" [number]=1 />
-    </div>
+    <app-section-title [text]="'About me'" [number]=1 />
     <div class="content">
         <app-overview />
         <app-timeline />
@@ -59,10 +57,11 @@
             </div>
         </div>
     </div>
-    <div class="section projects">
-        <app-section-title [text]="'Projects'" [number]=2 />
-        <div class="content">
-            <app-project *ngFor="let project of projects; let i = index" [project]="project"
-                [imgPosition]="i % 2 ? 'right' : 'left'" />
-        </div>
+</div>
+<div class="section projects">
+    <app-section-title [text]="'Projects'" [number]=2 />
+    <div class="content">
+        <app-project *ngFor="let project of projects; let i = index" [project]="project"
+            [imgPosition]="i % 2 ? 'right' : 'left'" />
     </div>
+</div>
