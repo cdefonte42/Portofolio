@@ -5,6 +5,10 @@
     font-family: IBM Plex Mono;
 }
 
+.text {
+    color: var(--lightest-slate);
+}
+
 .line {
     background-color: var(--lightest-navy);
     height: 0.1rem;

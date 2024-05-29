@@ -4,11 +4,10 @@ app-header {
     top: 0;
     left: 0;
     font-family: IBM Plex Mono;
-    z-index: 999;
+    z-index: 5;
     width: 100%;
-    backdrop-filter: blur(10px) brightness(75%);
-    box-shadow: 0 10px 30px -10px var(--light-navy);
-
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 20px 0px var(--dark-navy)
 }
 
 app-card.skill-logo {
@@ -80,7 +79,6 @@ app-timeline {
     color: var(--green);
     width: 70px;
     height: 70px;
-    background-color: var(--light-navy);
 }
 
 .skill-logo > svg {
