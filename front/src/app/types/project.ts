@@ -6,5 +6,7 @@ export interface Project {
     location?: string;
     description: string;
     skills?: string[];
-    imagePath: string;
+    imagesPath: string[];
+    videoPath?: string;
+    links?: { link: string, type: "app" | "repo" }[];
 }

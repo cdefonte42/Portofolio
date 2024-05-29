@@ -5,13 +5,42 @@
         </div>
         <div class="description">
             {{project.description}}
-
         </div>
+    </div>
+    <div *ngIf="project.links?.length" class="links">
+        <ng-container *ngFor="let link of project.links">
+            <a [href]="link.link" target="_blank">
+                <svg *ngIf="link.type === 'app'" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14 3C14 2.44772 14.4477 2 15 2H21C21.5523 2 22 2.44772 22 3V9C22 9.55228 21.5523 10 21 10C20.4477 10 20 9.55228 20 9V5.41421L10.7071 14.7071C10.3166 15.0976 9.68342 15.0976 9.29289 14.7071C8.90237 14.3166 8.90237 13.6834 9.29289 13.2929L18.5858 4H15C14.4477 4 14 3.55228 14 3Z"
+                        fill="currentColor" />
+                    <path
+                        d="M5 7C4.73478 7 4.48043 7.10536 4.29289 7.29289C4.10536 7.48043 4 7.73478 4 8V19C4 19.2652 4.10536 19.5196 4.29289 19.7071C4.48043 19.8946 4.73478 20 5 20H16C16.2652 20 16.5196 19.8946 16.7071 19.7071C16.8946 19.5196 17 19.2652 17 19V13C17 12.4477 17.4477 12 18 12C18.5523 12 19 12.4477 19 13V19C19 19.7957 18.6839 20.5587 18.1213 21.1213C17.5587 21.6839 16.7957 22 16 22H5C4.20435 22 3.44129 21.6839 2.87868 21.1213C2.31607 20.5587 2 19.7957 2 19V8C2 7.20435 2.31607 6.44129 2.87868 5.87868C3.44129 5.31607 4.20435 5 5 5H11C11.5523 5 12 5.44772 12 6C12 6.55228 11.5523 7 11 7H5Z"
+                        fill="currentColor" />
+                </svg>
+                <svg *ngIf="link.type === 'repo'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92">
+                    <defs>
+                        <clipPath id="a">
+                            <path d="M0 .113h91.887V92H0Zm0 0" />
+                        </clipPath>
+                    </defs>
+                    <g>
+                        <path style="stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1"
+                            d="M90.156 41.965 50.036 1.848a5.913 5.913 0 0 0-8.368 0l-8.332 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.043 7.043 0 0 1 1.673 7.277l10.183 10.184a7.026 7.026 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.045 7.045 0 0 1-9.961 0 7.038 7.038 0 0 1-1.532-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.034 7.034 0 0 1 2.308-1.539V33.926a7.001 7.001 0 0 1-2.308-1.535 7.049 7.049 0 0 1-1.516-7.7L29.242 14.273 1.734 41.777a5.918 5.918 0 0 0 0 8.371L41.855 90.27a5.92 5.92 0 0 0 8.368 0l39.933-39.934a5.925 5.925 0 0 0 0-8.371" />
+                    </g>
+                </svg>
+            </a>
+        </ng-container>
     </div>
 </div>
 <div class="img-skills-origin">
-    <div class="img-container">
-        <img src="{{project.imagePath}}">
+    <div *ngIf="project.videoPath" class="img-container">
+        <video class="media" controls autoplay>
+            <source [src]="project.videoPath" type="video/mp4">
+        </video>
+    </div>
+    <div *ngIf="!project.videoPath && currentImagePath" class="img-container">
+        <img class="media" src="{{currentImagePath}}">
     </div>
     <div class="skills" *ngIf="project.skills?.length">
         <div class="tag" *ngFor="let skill of project.skills">{{skill}}</div>
