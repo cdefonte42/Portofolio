@@ -11,7 +11,5 @@ import { CardComponent } from '../card/card.component';
   styleUrl: './overview.component.css'
 })
 export class OverviewComponent {
-  downloadCV() {
-    alert("vous allez telecharger mon cv")
-  }
+
 }
