@@ -31,10 +31,11 @@ export const Projects: Project[] = [
         location: "École 42 Paris",
         type: "school",
         description: "Premier projet web: jeu ping pong multijoueur, chat en temps reel avec socket.io. Systeme de droits et moderation pour le chat. Authentification par OAuth d’une API tierce.",
-        imagesPath: ["assets/small-high-img.png"]
+        imagesPath: ["assets/trans1.png"],
+        links: [{ link: "https://gitlab.com/ranuytte/42_transcendence", type: "repo" }]
     },
     {
-        skills: ["C"],
+        skills: ["C", "Ray Casting"],
         dateForm: "2022",
         dateTo: "2022",
         title: "Mini jeu Cub3D",

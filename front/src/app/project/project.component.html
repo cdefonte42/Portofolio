@@ -39,11 +39,18 @@
             <source [src]="project.videoPath" type="video/mp4">
         </video>
     </div>
-    <div *ngIf="!project.videoPath && currentImagePath" class="img-container">
-        <img class="media" src="{{currentImagePath}}">
-    </div>
+    <ng-container *ngIf="!project.videoPath && project.imagesPath && project.imagesPath.length > 0">
+        <div class="many-images img-container" *ngIf="project.imagesPath.length > 1; else elseBlock">
+            <img class="media" *ngFor="let image of project.imagesPath" [src]="image" />
+        </div>
+        <ng-template #elseBlock>
+            <div class="img-container">
+                <img class="media" src="{{project.imagesPath}}">
+            </div>
+        </ng-template>
+    </ng-container>
     <div class="skills" *ngIf="project.skills?.length">
-        <div class="tag" *ngFor="let skill of project.skills">{{skill}}</div>
+        <div class="tag text-xs" *ngFor="let skill of project.skills">{{skill}}</div>
     </div>
     <div *ngIf="project.location" class="origin">
         {{project.location}}, {{project.dateTo}}

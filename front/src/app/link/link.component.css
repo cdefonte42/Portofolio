@@ -8,7 +8,7 @@ a {
 }
 
 .svg {
-    color: #12F7D6;
+    color: var(--green);
     display: inline-flex;
     width: 1em;
 }
