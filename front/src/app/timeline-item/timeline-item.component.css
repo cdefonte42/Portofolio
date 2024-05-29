@@ -21,15 +21,6 @@
     margin-left: 3rem;
 }
 
-.date {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.date .to::before {
-    content: "-";
-}
-
 .title {
     padding-left: 0.75rem;
     font-weight: bold;

@@ -21,12 +21,7 @@
 </div>
 <div class="content" [class.can-expand]="experience.description || experience.location" (click)="setExpand(!expanded)">
     <div class="date">
-        <div class="from">
-            {{experience.dateForm}}
-        </div>
-        <div class="to">
-            {{experience.dateTo}}
-        </div>
+        {{experience.dateForm}} - {{experience.dateTo}}
     </div>
     <div class="title">{{experience.title}}</div>
     <div class="description" [@collapse]="expanded ? 'open' : 'closed'">
