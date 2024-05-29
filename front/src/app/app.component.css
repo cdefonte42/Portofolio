@@ -38,6 +38,14 @@ app-section-title {
     margin: auto;
 }
 
+app-overview {
+    flex: 1;
+}
+
+app-timeline {
+    flex: auto;
+}
+
 @media (max-width: 860px) {
     .section.overview > .content {
         display: block;
@@ -51,6 +59,7 @@ app-section-title {
 }
 
 .skills {
+    flex: 1;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;

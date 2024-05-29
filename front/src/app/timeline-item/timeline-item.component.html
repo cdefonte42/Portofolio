@@ -19,7 +19,7 @@
         </defs>
     </svg>
 </div>
-<div class="content" [class.can-expand]="experience.description" (click)="setExpand(!expanded)">
+<div class="content" [class.can-expand]="experience.description || experience.location" (click)="setExpand(!expanded)">
     <div class="date">
         <div class="from">
             {{experience.dateForm}}
@@ -29,5 +29,12 @@
         </div>
     </div>
     <div class="title">{{experience.title}}</div>
-    <div class="description" [@collapse]="expanded ? 'open' : 'closed'">{{experience.description}}</div>
+    <div class="description" [@collapse]="expanded ? 'open' : 'closed'">
+        <div>
+            {{experience.location}}
+        </div>
+        <div>
+            {{experience.description}}
+        </div>
+    </div>
 </div>
