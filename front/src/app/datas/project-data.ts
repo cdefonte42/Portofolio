@@ -30,7 +30,7 @@ export const Projects: Project[] = [
         title: "Application Web Transcendence",
         location: "École 42 Paris",
         type: "school",
-        description: "Premier projet web: jeu ping pong multijoueur, chat en temps reel avec socket.io. Systeme de droits et moderation pour le chat. Authentification par OAuth d’une API tierce.",
+        description: "Premier projet web: jeu de pong multijoueur en ligne, avec chat en temps reel. Système de droits et de moderation pour le chat. Authentification par OAuth à l'API 42.",
         imagesPath: ["assets/trans1.png"],
         links: [{ link: "https://gitlab.com/ranuytte/42_transcendence", type: "repo" }]
     },
@@ -41,7 +41,7 @@ export const Projects: Project[] = [
         title: "Mini jeu Cub3D",
         location: "École 42 Paris",
         type: "school",
-        description: "Premier projet graphique en C. Inspiré du jeu Wolfeinstein3D, ce projet permet d’explorer la technique du ray-casting et le développement de petits algorithmes basiques, ainsi que la notion de gestion d'évènements (souris et clavier). L'objectif était de faire une vue à la première personne au sein d’un labyrinthe.",
+        description: "Premier projet graphique en C. Inspiré du jeu Wolfeinstein3D, l'objectif étant de réaliser une vue à la première personne au sein d’un labyrinthe. Ce projet permet d’explorer la technique du ray-casting et le développement de petits algorithmes basiques, ainsi que la notion de gestion d'évènements (souris et clavier).",
         imagesPath: ["assets/cub1.png", "assets/cub2.png", "assets/cub3.png"],
         videoPath: "assets/cub-vid.mov",
         links: [{ link: "https://github.com/cdefonte42/Cube3D", type: "repo" }]
