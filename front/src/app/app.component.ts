@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LayoutComponent } from './layout/layout.component';
 import { OverviewComponent } from './overview/overview.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { SectionTitleComponent } from './section-title/section-title.component';
@@ -13,7 +12,7 @@ import { NgFor } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NgFor, ProjectComponent, CardComponent, LayoutComponent, OverviewComponent, TimelineComponent, SectionTitleComponent, HeaderComponent],
+  imports: [NgFor, ProjectComponent, CardComponent, OverviewComponent, TimelineComponent, SectionTitleComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
