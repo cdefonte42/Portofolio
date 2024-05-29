@@ -20,6 +20,11 @@
 .many-images {
     display: flex;
     overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.many-images > img:nth-child(2) {
+    scroll-snap-align: center;
 }
 
 .many-images > img:not(:first-child) {
