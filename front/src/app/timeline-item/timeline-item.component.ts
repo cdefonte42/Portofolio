@@ -15,6 +15,12 @@ import { AUTO_STYLE, animate, state, style, transition, trigger } from '@angular
       state('closed', style({ height: '0', visibility: 'hidden' })),
       transition('closed => open', animate('500ms ease-in')),
       transition('open => closed', animate('300ms ease-out'))
+    ]),
+    trigger('rotate', [
+      state('open', style({ transform: 'rotate(90deg)' })),
+      state('closed', style({ transform: 'rotate(0)' })),
+      transition('open => closed', animate('300ms')),
+      transition('closed => open', animate('300ms'))
     ])
   ]
 })
