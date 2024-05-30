@@ -99,7 +99,7 @@ app-timeline {
     font-family: IBM Plex Mono;
     width: 100%;
     border-top: solid var(--dark-slate) 1px;
-    height: 10vh;
+    height: fit-content;
     padding: 0.5rem 2rem;
     text-align: end;
 }
