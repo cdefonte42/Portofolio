@@ -92,3 +92,25 @@ app-timeline {
 .section.projects > .content {
     margin-top: 50px;
 }
+
+.footer {
+    margin-top: 2rem;
+    box-sizing: border-box;
+    font-family: IBM Plex Mono;
+    width: 100%;
+    border-top: solid var(--dark-slate) 1px;
+    height: 10vh;
+    padding: 0.5rem 2rem;
+    text-align: end;
+}
+
+.footer > div > a:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
