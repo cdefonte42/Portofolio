@@ -20,7 +20,7 @@ export const Projects: Project[] = [
         title: "Application Web Matcha",
         location: "École 42 Paris",
         type: "school",
-        description: "Second projet web: application de rencontre. Backend en C# avec ASP.Net Core. Frontend en TypeScript avec React et TailwindCss. Chat en temps reel avec Signal.",
+        description: "Second projet web: application de rencontre. Backend en C# avec ASP.Net Core. Frontend en TypeScript avec React et TailwindCss. Chat en temps réel avec Signal.",
         imagesPath: ["assets/matcha1.png", "assets/matcha2.png", "assets/matcha3.png"]
     },
     {
@@ -30,7 +30,7 @@ export const Projects: Project[] = [
         title: "Application Web Transcendence",
         location: "École 42 Paris",
         type: "school",
-        description: "Premier projet web: jeu de pong multijoueur en ligne, avec chat en temps reel. Système de droits et de moderation pour le chat. Authentification par OAuth à l'API 42.",
+        description: "Premier projet web: jeu de pong multijoueur en ligne, avec chat en temps réel. Système de droits et de moderation pour le chat. Authentification par OAuth à l'API 42.",
         imagesPath: ["assets/trans1.png"],
         links: [{ link: "https://gitlab.com/ranuytte/42_transcendence", type: "repo" }]
     },
