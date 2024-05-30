@@ -17,6 +17,6 @@ import { NgFor } from '@angular/common';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Portofolio';
+  title = 'Cyrielle DEFONTE';
   projects: Project[] = Projects;
 }
