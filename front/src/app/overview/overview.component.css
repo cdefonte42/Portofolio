@@ -19,6 +19,16 @@
     gap: 1rem;
 }
 
+.full-name {
+    color: var(--lightest-slate);
+    font-size: 1.5rem;
+}
+
+.statut {
+    font-family: IBM Plex Mono;
+    color: var(--green);
+}
+
 .infos > div {
     display: flex;
     flex-direction: row;
