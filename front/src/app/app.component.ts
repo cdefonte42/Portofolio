@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, } from '@angular/core';
 import { OverviewComponent } from './overview/overview.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { SectionTitleComponent } from './section-title/section-title.component';
@@ -16,7 +16,56 @@ import { NgFor } from '@angular/common';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'Cyrielle DEFONTE';
   projects: Project[] = Projects;
+  sections: string[] = ["CV", "EXPERIENCES", "SKILLS", "PROJETS"];
+  currentSection?: string;
+
+  @ViewChild('cvRef', { read: ElementRef }) cvRef!: ElementRef;
+  @ViewChild('timelineRef', { read: ElementRef }) timelineRef!: ElementRef;
+  @ViewChild('skillsRef', { read: ElementRef }) skillsRef!: ElementRef;
+  @ViewChild('projectsRef', { read: ElementRef }) projectsRef!: ElementRef;
+  @ViewChild('overviewRef', { read: ElementRef }) overviewRef!: ElementRef;
+
+  ngAfterViewInit() {
+    if (getComputedStyle(this.overviewRef.nativeElement).display === 'flex')
+      this.sections = ["CV", "PROJETS"];
+
+    const options = {
+      root: null,
+      rootMargin: "-50% 0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.updateCurrentSection(entry.target);
+        }
+      });
+    }, options);
+
+    observer.observe(this.cvRef.nativeElement);
+    observer.observe(this.timelineRef.nativeElement);
+    observer.observe(this.skillsRef.nativeElement);
+    observer.observe(this.projectsRef.nativeElement);
+  }
+
+  updateCurrentSection(element: Element) {
+    switch (element) {
+      case this.cvRef.nativeElement:
+        this.currentSection = this.sections[0];
+        break;
+      case this.timelineRef.nativeElement:
+        this.currentSection = this.sections.length > 2 ? this.sections[1] : this.sections[0];
+        break;
+      case this.skillsRef.nativeElement:
+        this.currentSection = this.sections.length > 2 ? this.sections[2] : this.sections[0];
+        break;
+      case this.projectsRef.nativeElement:
+        this.currentSection = this.sections.length > 2 ? this.sections[3] : this.sections[1];
+        break;
+    }
+  }
+
 }

@@ -1,10 +1,12 @@
-<app-header class="fadeInDown-animation" />
+<app-header class="fadeInDown-animation">
+    <div class="navigation">/ {{currentSection}}</div>
+</app-header>
 <div class="section overview">
     <app-section-title class="fadeIn-animation" [text]="'About me'" [number]=1 />
-    <div class="content ">
-        <app-overview class="fadeIn-animation" />
-        <app-timeline class="fadeIn-animation" />
-        <div class="skills fadeIn-animation">
+    <div #overviewRef class="content ">
+        <app-overview #cvRef class="fadeIn-animation" />
+        <app-timeline #timelineRef class="fadeIn-animation" />
+        <div #skillsRef class="skills fadeIn-animation">
             <div class="skill-card">
                 <app-card class="skill-logo">
                     <svg class="icon" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +60,7 @@
         </div>
     </div>
 </div>
-<div class="section projects">
+<div #projectsRef class="section projects">
     <app-section-title class="fadeIn-animation" [text]="'Projects'" [number]=2 />
     <div class="content">
         <app-project *ngFor="let project of projects; let i = index" [project]="project"

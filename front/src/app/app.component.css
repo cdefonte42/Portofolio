@@ -104,6 +104,11 @@ app-overview {
     flex: 1;
 }
 
+.navigation {
+    color: var(--green);
+}
+
+
 app-timeline {
     flex: auto;
     transition-delay: 200ms;
