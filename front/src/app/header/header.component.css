@@ -6,18 +6,22 @@
     box-sizing: border-box;
 }
 
-.cv {
-    color: var(--green);
-}
-
 .name {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.5em;
+    gap: 1rem;
     white-space: nowrap;
+    overflow-x: auto;
 
 }
+
+@media (max-width: 860px) {
+    .name > div {
+        display: none;
+    }
+}
+
 
 .content {
     display: flex;
@@ -28,6 +32,7 @@
     max-width: 1280px;
     margin: auto;
     flex-grow: 1;
+    gap: 1rem;
 }
 
 .account-links {
