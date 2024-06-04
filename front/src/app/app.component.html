@@ -12,7 +12,7 @@
     </div>
 </app-header>
 <div #overviewRef class="section overview">
-    <app-section-title class="fadeIn-animation" [text]="'About me'" [number]=1 />
+    <app-section-title class="fadeIn-animation" [text]="'À propos de moi'" [number]=1 />
     <div class="content ">
         <app-overview #cvRef class="fadeIn-animation" />
         <app-timeline #timelineRef class="fadeIn-animation" />
@@ -71,7 +71,7 @@
     </div>
 </div>
 <div #projectsRef class="section projects">
-    <app-section-title class="fadeIn-animation" [text]="'Projects'" [number]=2 />
+    <app-section-title class="fadeIn-animation" [text]="'Projets'" [number]=2 />
     <div class="content">
         <app-project *ngFor="let project of projects; let i = index" [project]="project"
             [imgPosition]="i % 2 ? 'right' : 'left'"
