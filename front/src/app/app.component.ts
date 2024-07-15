@@ -14,7 +14,7 @@ import { NgFor, NgIf } from '@angular/common';
   standalone: true,
   imports: [NgIf, NgFor, ProjectComponent, CardComponent, OverviewComponent, TimelineComponent, SectionTitleComponent, HeaderComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrls: ['./app.component.css', './app.component.animation.css'],
 
 })
 export class AppComponent implements AfterViewInit {
